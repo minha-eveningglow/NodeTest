@@ -5,7 +5,7 @@ import compression from 'compression';
 
 /*eslint-disable no-console */
 
-const port = 3000;
+const port = 9999;
 const app = express();
 
 app.use(compression());
@@ -19,6 +19,6 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`);
+    open(`http://139.162.106.240:${port}`);
   }
 });
